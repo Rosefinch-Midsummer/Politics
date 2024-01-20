@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html lang="en" class="light" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>论教育与反真女权 - 政治學</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('light')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="弁言.html">弁言</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><li class="part-title">中文典籍</li><li class="chapter-item expanded "><a href="三民主义.html"><strong aria-hidden="true">1.</strong> 三民主义</a></li><li class="chapter-item expanded "><a href="唐六典.html"><strong aria-hidden="true">2.</strong> 唐六典</a></li><li class="chapter-item expanded "><a href="通典.html"><strong aria-hidden="true">3.</strong> 通典</a></li><li class="chapter-item expanded "><a href="建国方略.html"><strong aria-hidden="true">4.</strong> 建国方略</a></li><li class="chapter-item expanded "><a href="政学私言.html"><strong aria-hidden="true">5.</strong> 政学私言</a></li><li class="chapter-item expanded "><a href="论教育与反真女权.html" class="active"><strong aria-hidden="true">6.</strong> 论教育与反真女权</a></li><li class="chapter-item expanded affix "><li class="part-title">外文書籍</li><li class="chapter-item expanded "><a href="独裁者手册.html"><strong aria-hidden="true">7.</strong> 独裁者手册：为什么坏行为几乎总是好政治</a></li><li class="chapter-item expanded "><a href="联邦党人文集.html"><strong aria-hidden="true">8.</strong> 联邦党人文集</a></li><li class="chapter-item expanded "><a href="道德情操论.html"><strong aria-hidden="true">9.</strong> 道德情操论</a></li><li class="chapter-item expanded "><a href="论美国的民主.html"><strong aria-hidden="true">10.</strong> 论美国的民主</a></li><li class="chapter-item expanded "><a href="旧制度与大革命.html"><strong aria-hidden="true">11.</strong> 旧制度与大革命</a></li><li class="chapter-item expanded "><a href="自由平等博爱.html"><strong aria-hidden="true">12.</strong> 自由·平等·博爱</a></li><li class="chapter-item expanded "><a href="古代人的自由与现代人的自由.html"><strong aria-hidden="true">13.</strong> 古代人的自由与现代人的自由</a></li><li class="chapter-item expanded "><a href="国会政体.html"><strong aria-hidden="true">14.</strong> 国会政体：美国政治研究</a></li><li class="chapter-item expanded "><a href="社会主义：经济与社会学分析.html"><strong aria-hidden="true">15.</strong> 社会主义：经济与社会学分析</a></li><li class="chapter-item expanded "><a href="通往奴役之路.html"><strong aria-hidden="true">16.</strong> 通往奴役之路</a></li><li class="chapter-item expanded "><a href="致命的自负.html"><strong aria-hidden="true">17.</strong> 致命的自负：社会主义的谬误</a></li><li class="chapter-item expanded "><a href="自由秩序原理.html"><strong aria-hidden="true">18.</strong> 自由秩序原理</a></li><li class="chapter-item expanded "><a href="法律、立法与自由.html"><strong aria-hidden="true">19.</strong> 法律、立法与自由</a></li><li class="chapter-item expanded "><a href="开放社会及其敌人.html"><strong aria-hidden="true">20.</strong> 开放社会及其敌人</a></li><li class="chapter-item expanded "><a href="历史决定论的贫困.html"><strong aria-hidden="true">21.</strong> 历史决定论的贫困</a></li><li class="chapter-item expanded "><a href="极权主义的起源.html"><strong aria-hidden="true">22.</strong> 极权主义的起源——经济人的末日</a></li><li class="chapter-item expanded "><a href="自由四论.html"><strong aria-hidden="true">23.</strong> 自由四论</a></li><li class="chapter-item expanded "><a href="自由及其背叛.html"><strong aria-hidden="true">24.</strong> 自由及其背叛：人类自由的六个敌人</a></li><li class="chapter-item expanded "><a href="知识分子与社会.html"><strong aria-hidden="true">25.</strong> 知识分子与社会</a></li><li class="chapter-item expanded "><a href="所谓知识分子.html"><strong aria-hidden="true">26.</strong> 所谓知识分子</a></li><li class="chapter-item expanded "><a href="知识分子的鸦片.html"><strong aria-hidden="true">27.</strong> 知识分子的鸦片</a></li><li class="chapter-item expanded "><a href="大国政治的悲剧.html"><strong aria-hidden="true">28.</strong> 大国政治的悲剧</a></li><li class="chapter-item expanded "><a href="理想国.html"><strong aria-hidden="true">29.</strong> 理想国</a></li><li class="chapter-item expanded "><a href="君主论.html"><strong aria-hidden="true">30.</strong> 君主论</a></li><li class="chapter-item expanded "><a href="论法的精神.html"><strong aria-hidden="true">31.</strong> 论法的精神</a></li><li class="chapter-item expanded "><a href="政府论.html"><strong aria-hidden="true">32.</strong> 政府论</a></li><li class="chapter-item expanded affix "><li class="part-title">概览</li><li class="chapter-item expanded "><a href="国际关系理论.html"><strong aria-hidden="true">33.</strong> 国际关系理论</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">政治學</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="论教育与反真女权"><a class="header" href="#论教育与反真女权">论教育与反真女权</a></h1>
+<ul>
+<li><a href="#%E6%A6%82%E8%BF%B0">概述</a></li>
+<li><a href="#%E7%9B%AE%E5%BD%95">目录</a></li>
+<li><a href="#%E8%87%AA%E6%92%B0%E5%BA%8F%E8%A8%80">自撰序言</a></li>
+<li><a href="#%E4%B8%A5%E6%AD%A3%E5%A3%B0%E6%98%8E">严正声明</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%80%E7%AB%A0--%E4%B8%A4%E6%80%A7%E6%99%BA%E5%95%86%E5%9D%87%E5%80%BC%E5%B7%AE%E5%BC%82%E4%B8%8E%E5%8F%98%E5%BC%82%E6%80%A7%E7%9A%84%E5%B7%AE%E5%BC%82">第一章  两性智商均值差异与“变异性”的差异</a></li>
+<li><a href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0--%E5%9F%BA%E4%BA%8E%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9%E7%BB%8F%E6%B5%8E%E7%A4%BE%E4%BC%9A%E7%8E%AF%E5%A2%83%E6%95%99%E8%82%B2%E8%B5%84%E6%BA%90%E6%97%B6%E4%BB%A3%E8%83%8C%E6%99%AF%E7%AD%89%E6%96%B9%E9%9D%A2%E6%83%85%E5%86%B5%E9%92%88%E5%AF%B9%E8%80%83%E8%AF%95%E6%88%90%E7%BB%A9%E6%80%A7%E5%88%AB%E5%B7%AE%E5%BC%82%E7%9A%84%E5%85%A8%E6%96%B9%E4%BD%8D%E8%A7%A3%E6%9E%90">第二章  基于考试成绩，经济社会环境，教育资源，时代背景等方面情况针对考试成绩性别差异的全方位解析</a></li>
+<li><a href="#%E7%AC%AC%E4%B8%89%E7%AB%A0--%E7%BA%A0%E6%AD%A3%E6%A6%82%E5%BF%B5%E9%94%99%E8%AF%AF%E8%AF%AD%E8%A8%80%E8%85%90%E8%B4%A5%E5%B9%B6%E7%A4%BA%E4%BE%8B%E5%A6%82%E4%BD%95%E6%89%93%E5%81%87">第三章  纠正概念错误，语言腐败，并示例如何打假</a></li>
+<li><a href="#%E7%AC%AC%E5%9B%9B%E7%AB%A0--%E7%9B%B8%E5%85%B3%E6%95%B0%E6%8D%AE%E9%99%84%E5%BD%95">第四章  相关数据附录</a></li>
+<li><a href="#%E7%BB%93%E8%AF%AD">结语</a></li>
+</ul>
+<h1 id="概述"><a class="header" href="#概述">概述</a></h1>
+<p>书名：论教育与真女权——基于中外数据与科学事实的解析</p>
+<p>作者：东风破云起苍黄（知乎网名）</p>
+<p>周官学社出品</p>
+<p>本书致敬先贤米塞斯、哈耶克、科尔奈否定计划经济的伟大贡献</p>
+<p>第一版 完稿于耶元2023年</p>
+<p><a href="https://rosefinch-midsummer.github.io/Books/file/Politics/%E8%AE%BA%E6%95%99%E8%82%B2%E4%B8%8E%E5%8F%8D%E7%9C%9F%E5%A5%B3%E6%9D%83.pdf">在线阅读pdf文档</a></p>
+<p>女权分子爱造谣“男女比例失衡”比如男比女多三千万来搞饥饿营销，实际上22岁左右的青年男女中女性稍微多一点。大陆官方没有找专家出来辟谣，说明这确实是个谣言，是个符合官方践行马克思主义的谣言。毕竟按照政治学第一定律，只有官方否认的才可信（<del>乐</del>）。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost03/img/202401202103420.png" alt="" /></p>
+<p>本书唯一的缺点就是尬吹太平天国邪教倡乱。洪秀全信的就是“爷火华”，不是<strong>昊天上帝</strong>。。。只不过洪秀全文化水平太低，只读过一本《劝世良言》小册子，胡言乱语之下还是只能直接偷偷摸摸地翻看《周礼》之类的书给自己的大脑“充电”，偶尔提及几句“皇天上帝”纯粹是胡思乱想搞缝合的结果。“一代领导核心”就是成功的洪秀全，洪秀全就是失败的“一代目”！</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost03/img/202401202057833.png" alt="" /></p>
+<p>下面内容节选自《<a href="https://www.thepaper.cn/newsDetail_forward_4113272">关于洪秀全“丁酉异梦”的互文性考辨</a>》（作者华东师范大学中文系教授褚潇白2019-08-14 15:27来源：《学术月刊》2019年第7期）：</p>
+<p>梁发在《劝世良言》开篇中说，神爷火华所创万物中有一自化为蛇魔的罪恶之神，引诱一妇人吞食知恶果，妇人又让其夫食之，故神爷火华发怒将二人逐出所居乐园。在乐园东边，神爷火华命令“基路伯”手握发火的剑警戒看护乐园，阻止那对夫妇重返乐土。这段故事出自《新旧约全书·创世记》，但关于伊甸园之蛇为蛇魔一说，乃是梁发自己的解释。在《劝世良言》第三篇中，可能是为了强调这个人类堕落故事的重要性，梁发又以不同的叙事方式把这个故事重复了一遍，其中与上帝作对的仍然是被称为恶魔的蛇。巧合的是，洪秀全那年生病时，神游四方，常在其室内走动跳跃，或如兵士战斗状，常大声疾呼：“斩妖，斩妖，斩呀！斩呀！这里有一只，那里有一只，没有一只可以挡我的宝剑一斫的。”这是洪仁玕日后讲给传教士韩山文的情节。在《太平天日》中，洪秀全叙述在异梦中与“天父上主皇上帝”相见后被指点凡间“妖魔迷害人情状”，并受命“战逐妖魔”，还被赐予了金玺。其中有不少战妖斩妖的情节，比如：</p>
+<p><em>主（引者按：指洪秀全）与妖魔战时，天父上主皇上帝在其后，天兄基督亦在其后执金玺照妖。妖不能害主，且妖不敢见金玺，见金玺即走。其妖头甚作怪多变，有时打倒地，倏变为大蛇矣；又将大蛇打倒，倏又变为别样矣，能变得十七八变，虽狗虱之小亦能变焉。主战到愤怒时欲遽收他，天父上主皇上帝谕曰：“这妖是老蛇，能迷人食人灵魂，若即收他，许多被他食之灵魂无救矣，况污秽圣所，故暂容他命。”</em></p>
+<p>此处出现之妖乃是“老蛇”，洪秀全已经将《劝世良言》中出现的蛇魔与他异梦中打斗的妖魔之间画上了等号。由于梁发在书中痛斥、攻击中国人之偶像崇拜和巫术风水等信仰风俗，并特别指出“蛇魔邪神以邪风迷蒙了灵心，不由正道之理、不安命守分，自为妄想”，所以，洪秀全在读了《劝世良言》后就开始铲除各种偶像：先除去了私塾里的孔子牌位，继而又开始讨伐佛、道及各种民间信仰庙宇（比如赐谷村“六窝庙”和象州“甘王庙”）内的塑像。在其后的太平天国起义过程中，这种对于寺庙神像的攻击都是不遗余力的。不仅如此，由于梁发采用的《新旧约全书》译本将魔鬼撒旦翻译为“阎罗妖”或者“东海龙王”，所以太平天国也采用了“阎罗妖”的叫法，比如在1848年的《天兄圣旨》中，天兄基督晓谕天王时就说：“海龙就是妖魔头，凡间所说阎罗妖正是他，东海龙妖也是他，总是他变身，缠捉凡间人灵魂。”值得注意的是，龙也是皇帝的象征。1849年底或1850年初，洪秀全已将统治中国的满人及其官府爪牙定为应予消灭的妖魔。这个对于妖魔的身份确认在太平天国运动中贯彻首尾。定都天京后，洪秀全之子洪天贵福也开始做梦，而且也梦到了蛇妖怪，由此与父亲的“丁酉异梦”相印证。洪天贵福预言1860年太平军第二次解南京之围，梦到两条蛇绕城，他用剑杀了蛇。洪秀全大喜，为庆祝梦的应验，特立节日以纪念。</p>
+<p>注：上文修改了一个名词。</p>
+<p><img src="http://image.thepaper.cn/www/image/26/742/593.jpg" alt="w" /></p>
+<h1 id="目录"><a class="header" href="#目录">目录</a></h1>
+<h1 id="自撰序言"><a class="header" href="#自撰序言">自撰序言</a></h1>
+<p>开篇即点题：反女权的希望在于反真女权，反真女权的希望在于反对半边天主义，否定妇女解放，清算男女平等，为父权制正名。</p>
+<p>针对半边天主义的否定，在体能的性别差异方面较为容易，而在文化教育/智能方面却显得十分困难，反女权人士在这方面的奔走呼号常常显得近乎愚蠢，甚至像是在给形形色色的女权主义者“  递刀子”。在二战后，全世界许多国家和地区出现了诸如女性大学入学人数超过男性，公务员考试上岸人数女多男少，公检法被女性“  占领”  之类的的现象，左派欢呼于女性似乎将要在后工业革命乃至信息化时代取得相对男性的社会竞争优势，从而一举推翻父权制，实现所谓的“  全人类的解放”  。许多保守主义者对此感到极为恐慌，害怕左派，女权主义者以解放女性，解放全人类，实现男女平等的旗号破坏人类文明的根基——父权制，彻底毁灭我们的祖先数千年来薪火相传，含辛茹苦建立起来的人类文明社会。</p>
+<p><strong>面对这一为许多人所恐慌的“难题” ，鄙人不才，决定挺身而出，冒天下之大不韪，承受左派和许多不明真相者的谩骂，以中外许许多多的数据与科学事实为基础，从被左派污染的媒体宣传和学界论文当中抽丝剥茧，还原真相，完全意义上的解构真女权，解构半边天，为一切有良知的保守主义者在光复之后重建能可持续发展的主体民族/异性恋/农本位/市场经济/保守主义的文明社会打下坚实的理论基础。</strong></p>
+<h1 id="严正声明"><a class="header" href="#严正声明">严正声明</a></h1>
+<h1 id="第一章--两性智商均值差异与变异性的差异"><a class="header" href="#第一章--两性智商均值差异与变异性的差异">第一章  两性智商均值差异与“变异性”的差异</a></h1>
+<p>1.1 智商均值差异</p>
+<p>1.2 男女智力变异性存在差异</p>
+<p>1.2.1智商离散度差异——男大女小</p>
+<p>1.2.2 潜能发挥稳定性的性别差异</p>
+<p>1.2.3 幼态与成年个体的两性变异性差异</p>
+<p>1.2.4 男女智力差异的遗传学基础</p>
+<h1 id="第二章--基于考试成绩经济社会环境教育资源时代背景等方面情况针对考试成绩性别差异的全方位解析"><a class="header" href="#第二章--基于考试成绩经济社会环境教育资源时代背景等方面情况针对考试成绩性别差异的全方位解析">第二章  基于考试成绩，经济社会环境，教育资源，时代背景等方面情况针对考试成绩性别差异的全方位解析</a></h1>
+<p>2.1  前提条件——已确定 21 世纪初中美两国基础教育资源女多男少</p>
+<p>2.1.1 21 世纪初的中国已经出现基础教育资源女多男少的局面</p>
+<p>2.1.2 21 世纪初的美国在大学录取时不惜以破坏人才选拔的公平性来优待女生和少数族裔</p>
+<p>2.2 从中美高等院校入学考试对比分析看利女化的考试改革</p>
+<p>2.2.1从美国 SAT/ACT考试看美国“  高考”的利女化改革</p>
+<p>2.2.2解析 1999 年扩招后高考利女腐化的原理与结果</p>
+<p>2.2.3 从山东 3 + 3 高考结果的定量分析展望 3 + 1 + 2 与 3 + 3 时代高考与出生人口的关系</p>
+<p>2.2.4 20世纪80 -- 90年代高考难度与长辈对那时候高考的回忆</p>
+<p>2.3 谈经济驱动力的性别差异以及这种性别差异导致的男女入学率与智力分布曲线的偏离</p>
+<p>2.4 公务员考试与考研/GRE考试当中的性别差异</p>
+<p>2.4.1 公务员考试“女强男弱”的假象从何而来？</p>
+<p>2.4.2 考研与GRE考试：扩招时代男生的考试能力更强但被录取人数更少</p>
+<p>2.5细论扩招的危害/兼论米格道女本位周期律</p>
+<p>2.5.1 扩招分流的那些差生如果参加入学考试会不会导致入学考试平均分女高男低？</p>
+<p>2.5.2 与扩招相匹配的教材阉割导致“减负减负，越减越负”</p>
+<p>2.5.3 扩招与劣化的教育改革相辅相成</p>
+<p>2.5.4 扩招与“假就业”的自锁正反馈</p>
+<p>2.5.5 美国大学扩招后的那些恶劣后果</p>
+<p>2.5.6 谈米格道女本位周期律理论模型</p>
+<p>2.6劣化生育的隐忧：人类遗传智商降低且女性可能降低更多</p>
+<h1 id="第三章--纠正概念错误语言腐败并示例如何打假"><a class="header" href="#第三章--纠正概念错误语言腐败并示例如何打假">第三章  纠正概念错误，语言腐败，并示例如何打假</a></h1>
+<p>3.1对21世纪前三十年中国大陆真实总人口和性别比数据的讨论</p>
+<p>3.2清理语言腐败，更正错误概念，恢复常识，澄清真相</p>
+<p>3.3示例：对女权虚假学术和媒体宣传的打假</p>
+<p>3.3.1 与考研逻辑不同，理科竞赛女生“  录报比”  高于男生不能说明女生比男生更擅长理科</p>
+<p>3.3.2 第一位程序员是女性说明男性计算机能力差于女性，抢夺了女性程序员的贡献吗？</p>
+<p>3.3.3 记两则令人匪夷所思的女权主义理工科新闻报道</p>
+<p>3.3.4对标中考的PISA数学成绩无性别差异？统计学把戏而已</p>
+<p>3.3.5 如何看待数据帝发视频为张桂梅撑腰：「张桂梅帮助的不止女生」？（前后共三次拉锯反驳）</p>
+<p>3.3.6  揭露女权主义对两性成绩差异的造假——以网易数读女权文章为例</p>
+<h1 id="第四章--相关数据附录"><a class="header" href="#第四章--相关数据附录">第四章  相关数据附录</a></h1>
+<p>4.1各科目平均分性别差异与科目平均分的关系</p>
+<p>4.1.1美国SAT考试（时间为1972——2014年）</p>
+<p>4.1.2高考浙江卷除数学外的所有科目（时间为2006 -- 2014年）</p>
+<p>4.1.3 浙江卷高考数学（2006——2014 年）+ 2016 六省全国卷高考理科数学  + 河南省S县05/06/09三年全国一卷数学</p>
+<p>4.2高考状元男女比例与数量变迁</p>
+<p>4.3 PRC 大规模城市化前对各地区定居人口儿童智商的测试数据</p>
+<p>4.4山东省 3 + 3 高考全省前五十名男女比例</p>
+<p>4.5 广东省更换全国卷前后极高分段男女比例变化的具体统计结果</p>
+<h1 id="结语"><a class="header" href="#结语">结语</a></h1>
+<p>古人云：“晋之妇教，最为衰弊”  。晋武帝时期的司法也出现了给女性罪犯轻判的案例。西晋短暂的统一了中国约五十年时间，中国北方就沦陷于五胡十六国的胡尘里。</p>
+<p>古希腊的斯巴达，以及西罗马帝国晚期也出现了生育率低，女权冲击司法之类的现象，最终古希腊，古罗马都亡于异族入侵。</p>
+<p>亚里士多德曾经在《政治论》当中明确的指出，女权主义，以女制男是僭主政治，而非社会治理的康庄大道。</p>
+<p>在这个 2023 年的进步主义衰世，各国的财政，人口，外贸等方方面面都已经出现了严重的危机。三世纪到五世纪的东亚与西欧都是遍地腥膻，而现如今的所谓雅尔塔体系“  后现代社会” 也出现了同样的日薄西山之兆，女权社会的秩序已经开始摇摇欲坠。</p>
+<p>我们这个伟大的民族，在东亚巍然屹立了五千年。<strong>我们有责任擎起文明的火炬，保卫并延续祖先薪火相传五千年的文明。而想保卫我们汉族之中华的血脉与文明，我想，只有这一个办法</strong>：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/Rosefinch-Midsummer/MyImagesHost03/img/202401202034884.png" alt="" /></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="政学私言.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="独裁者手册.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="政学私言.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="独裁者手册.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
